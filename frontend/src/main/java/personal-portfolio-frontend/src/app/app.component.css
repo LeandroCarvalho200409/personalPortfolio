@@ -1,0 +1,55 @@
+
+/* typewriter for name*/
+
+.name {
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+}
+
+/* header */
+.header {
+    background-color: black;
+    border-radius: 5px;
+    min-width: 80vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.main-contents {
+    display: flex;
+    margin-top: 40px;
+}
+
+.content-left {
+    width: 40vw;
+    margin-right: 5px;
+    margin-left: 50px;
+}
+
+.content-right {
+    width: 40vw;
+    margin-left: auto;
+}
+
+img {
+    max-width: 25vw;
+    position: relative;
+    transform: translate(5%, -5%);
+}
+
+.img-container {
+    background-color: #697565;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+

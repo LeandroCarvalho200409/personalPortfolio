@@ -1,0 +1,7 @@
+<div class="language-selector">
+  <div *ngFor="let language of languages">
+    <input type="radio" name="language" [id]="language" [value]="language" [(ngModel)]="selectedLanguage" (click)="sendNewLanguage(language)"/>
+    <label [htmlFor]="language" [id]="language" class="language-label">{{ language }}</label>
+  </div>
+</div>
+

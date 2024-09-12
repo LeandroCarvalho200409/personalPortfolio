@@ -1,0 +1,38 @@
+
+.language-selector {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: fit-content;
+}
+
+input {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+}
+
+.language-label {
+    cursor: pointer;
+    background-color: #353b34;
+    margin: 0;
+    padding: 2px;
+    min-height: 20px;
+    display: inline-block;
+}
+
+#EN {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#DE {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input:checked + .language-label {
+    background-color: #697565;
+    color: #1E201E;
+}
+
