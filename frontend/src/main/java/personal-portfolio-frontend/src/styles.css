@@ -2,13 +2,17 @@
 
 html {
     height: 100vh;
+    min-height: 100vh;
+    overflow: auto;
 }
 
 body {
     height: 100%;
-    background-color: #1E201E;
-    color: #ECDFCC;
+    min-height: 100%;
+    color: white;
     display: flex;
     justify-content: center;
+    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: auto;
 }

@@ -1,0 +1,73 @@
+
+svg {
+    fill: white;
+}
+
+svg:hover {
+    fill: #697565;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 300px;
+}
+
+.contact-me-button {
+    width: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    font-size: 16pt;
+    background-color: #1E201E;
+    color: white;
+    border-radius: 5px;
+    border: white 0.5px solid;
+}
+
+.contact-me-button:hover {
+    cursor: pointer;
+    background-color: #697565;
+}
+
+.alt-text {
+    display: flex;
+}
+
+.alt-text hr {
+    width: 100px;
+    height: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.alt-text p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.modal {
+    width: 50vw;
+    max-width: 500px;
+    height: 50vh;
+    background-color: rgb(105, 117, 101, 0.9);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

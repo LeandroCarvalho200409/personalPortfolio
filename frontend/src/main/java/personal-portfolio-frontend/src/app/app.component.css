@@ -1,55 +1,130 @@
 
-/* typewriter for name*/
+
+#background-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right bottom, black 50%, #090e42 50.3%);
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .name {
     color: white;
+    text-align: center;
 }
 
 .title {
     display: flex;
     flex-direction: column;
     max-width: 40vw;
+    align-items: left;
+    text-align: center;
+    justify-content: center;
 }
 
 /* header */
 .header {
     background-color: black;
-    border-radius: 5px;
+    border-radius: 10px;
     min-width: 80vw;
-    height: 40px;
+    height: 60px;
     display: flex;
     align-items: center;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 30px;
+    position: fixed
 }
 
 .main-contents {
     display: flex;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
-.content-left {
-    width: 40vw;
+.container {
+    width: 80vw;
     margin-right: 5px;
     margin-left: 50px;
-}
-
-.content-right {
-    width: 40vw;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
-    max-width: 25vw;
-    position: relative;
-    transform: translate(5%, -5%);
-}
-
-.img-container {
-    background-color: #697565;
     width: 25vw;
-    margin-left: auto;
-    margin-right: 100px;
-    margin-top: 25px;
+    max-width: 300px;
 }
 
+.contents-bottom {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.contact-cmp {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.button-group-header {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.download {
+    background-color: #4a4a4b;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+.download:hover {
+    background-color: #353b34;
+    cursor: pointer;
+}
+
+.download p {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 15px;
+}
+
+.download svg {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+
+.about {
+    height: 1500px;
+    display: inline-block;
+    position: relative;
+}
+
+.sticky-component {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 10rem;
+}
+
+.experience {
+    height: 2000px;
+}

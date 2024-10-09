@@ -1,24 +1,44 @@
 
+<div id="background-container"></div>
+
 <div class="header">
-  <app-language-selector (languageMessageEvent)="handleLanguageChange($event)"></app-language-selector>
+  <h2>Leandro Carvalho</h2>
+  <div class="button-group-header">
+    <app-language-selector (languageMessageEvent)="handleLanguageChange($event)"></app-language-selector>
+    <button class="download">
+      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 22.0002H16C18.8284 22.0002 20.2426 22.0002 21.1213 21.1215C22 20.2429 22 18.8286 22 16.0002V15.0002C22 12.1718 22 10.7576 21.1213 9.8789C20.3529 9.11051 19.175 9.01406 17 9.00195M7 9.00195C4.82497 9.01406 3.64706 9.11051 2.87868 9.87889C2 10.7576 2 12.1718 2 15.0002L2 16.0002C2 18.8286 2 20.2429 2.87868 21.1215C3.17848 21.4213 3.54062 21.6188 4 21.749" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M12 2L12 15M12 15L9 11.5M12 15L15 11.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      <p>CV</p>
+      </button>
+  </div>
 </div>
 <div class="main-contents">
-  <div class="content-left">
+  <div class="container">
+    <img src="/assets/own-picture.png" alt="Picture of Leandro Carvalho"/>
     <h1 class="title"> {{ greeting }} <span class="name">{{ name }}</span></h1>
-  <div *ngIf="selectedLanguage == 'EN'">
+  <div *ngIf="selectedLanguage() == 'EN'">
     <app-en></app-en>
   </div>
-  <div *ngIf="selectedLanguage == 'PT'">
+  <div *ngIf="selectedLanguage() == 'PT'">
     <app-pt></app-pt>
   </div>
-  <div *ngIf="selectedLanguage == 'DE'">
+  <div *ngIf="selectedLanguage() == 'DE'">
     <app-de></app-de>
   </div>
+  <app-get-in-touch class="contact-cmp" [language]="selectedLanguage()"></app-get-in-touch>
   </div>
-  <div class="content-right">
-    <div class="img-container">
-      <img src="/assets/own-picture.png" alt="Picture of Leandro Carvalho"/>
+</div>
+<div class="contents-bottom">
+  <div class="about">
+    <h1>About me</h1>
+    <div class="sticky-component">
+      <p>I'm sticky!!!</p>
     </div>
-    </div>
+  </div>
+  <div class="experience">
+    <h1>Experience</h1>
+  </div>
 </div>
 

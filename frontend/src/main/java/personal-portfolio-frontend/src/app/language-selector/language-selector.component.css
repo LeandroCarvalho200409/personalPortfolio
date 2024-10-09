@@ -31,8 +31,12 @@ input {
     border-bottom-right-radius: 5px;
 }
 
+.language-label:hover {
+    color: white;
+    font-weight: bold;
+}
+
 input:checked + .language-label {
-    background-color: #697565;
-    color: #1E201E;
+    background-color: #1521aa;
 }
 
