@@ -1,15 +1,5 @@
 
 <div class="get-in-touch">
-    <button *ngIf="language() == 'EN'" class="contact-me-button" (click)="openModal()">Contact Me</button>
-    <button *ngIf="language() == 'DE'" class="contact-me-button" (click)="openModal()">Kontaktier mich</button>
-    <button *ngIf="language() == 'PT'" class="contact-me-button" (click)="openModal()">Contacte-me</button>
-    <div class="alt-text">
-        <hr/>
-        <p *ngIf="language() == 'EN'">or alternatively</p>
-        <p *ngIf="language() == 'DE'">oder alternativ über</p>
-        <p *ngIf="language() == 'PT'">ou alternativamente</p>
-        <hr/>
-    </div>
     <div class="social-media">
         <a target="_blank" href="https://www.linkedin.com/in/leandro-filipe-louren%C3%A7o-carvalho-23700b215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 24 24">
@@ -22,12 +12,5 @@
             </svg>
         </a>
     </div>
-</div>
-
-<div class="modal-wrapper" *ngIf="modalOpen">
-    <section class="modal">
-        <p>This is a modal</p>
-        <button class="close-btn" (click)="closeModal()">X</button>
-    </section>
 </div>
 

@@ -37,6 +37,6 @@ input {
 }
 
 input:checked + .language-label {
-    background-color: #1521aa;
+    background-color: #be3523;
 }
 

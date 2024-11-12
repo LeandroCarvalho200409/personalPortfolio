@@ -13,16 +13,5 @@ export class GetInTouchComponent {
 
     language = input<string>();
 
-    modalOpen = false;
-
-    public openModal() {
-        this.modalOpen = true;
-        console.log('modal opened')
-    }
-
-    public closeModal() {
-        this.modalOpen = false;
-    }
-
 }
 
